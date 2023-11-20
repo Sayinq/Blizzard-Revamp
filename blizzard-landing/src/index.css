@@ -17,3 +17,68 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "Archivo";
+  src:
+    url("./assets/fonts/Archivo-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+  font-family: "Bord";
+  src:
+    url("./assets/fonts/Bord.ttf") format("truetype");
+    font-weight: normal;
+    font-size: normal;
+}
+
+h1 {
+  font-family: 'Bord', sans-serif;
+  background: #0E76D0;
+  background: linear-gradient(to bottom, #0E76D0 20%, #044F9C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+span,
+p {
+  font-family: 'Archivo', sans-serif;
+}
+
+#game-name {
+  color: white;
+  font-family: 'Bord', sans-serif;
+}
+
+.wrapper {
+  font-family: 'Bord', sans-serif;
+}
+
+/* Parallax Scroll Text */
+
+.parallax {
+  overflow: hidden;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  color: black;
+}
+
+.parallax .scroller {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 64px;
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.parallax span {
+  display: block;
+}
+
