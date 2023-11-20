@@ -78,7 +78,31 @@ p {
   flex-wrap: nowrap;
 }
 
+@media (min-width: 1280px) {
+  .parallax .scroller {
+    font-size: 80px;
+  }
+}
+
+
 .parallax span {
   display: block;
 }
 
+/* News Section */
+
+#news-main {
+  background: center / cover url('./assets/news/Immortal_pic.png');
+}
+
+#secondary-one {
+  background: center / cover url('./assets/news/blizzcon_pic.png');
+}
+
+#secondary-two {
+  background: center / cover url('./assets/news/D4_pic.png');
+}
+
+#game:hover > #arrow-icon {
+  transform: rotate(90deg);
+}
