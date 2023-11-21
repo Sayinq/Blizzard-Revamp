@@ -47,6 +47,33 @@ p {
   font-family: 'Archivo', sans-serif;
 }
 
+#gradient-overlay {
+  background: linear-gradient(
+    rgba(36, 36, 36, 0.6),
+    rgba(36, 36, 36, 0.625),
+    rgba(36, 36, 36, 0.65),
+    rgba(36, 36, 36, 0.675),
+    rgba(36, 36, 36, 0.7),
+    rgba(36, 36, 36, 0.725),
+    rgba(36, 36, 36, 0.75),
+    rgba(36, 36, 36, 0.8),
+    rgba(36, 36, 36, 0.825),
+    rgba(36, 36, 36, 0.85),
+    rgba(36, 36, 36, 0.875),
+    rgba(36, 36, 36, 0.9),
+    rgba(36, 36, 36, 0.925),
+    rgba(36, 36, 36, 0.95),
+    rgba(36, 36, 36, 0.975),
+    rgba(36, 36, 36, 1)
+  );
+}
+
+#hero-text span {
+  color: white;
+  font-family: 'Bord', sans-serif;
+  font-weight: 800;
+}
+
 #game-name {
   color: white;
   font-family: 'Bord', sans-serif;
@@ -72,7 +99,6 @@ p {
 .parallax .scroller {
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 64px;
   display: flex;
   white-space: nowrap;
   flex-wrap: nowrap;
