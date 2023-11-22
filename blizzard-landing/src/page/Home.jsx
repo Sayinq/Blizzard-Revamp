@@ -5,16 +5,13 @@ import About from '../components/About';
 import News from '../components/News';
 import Footer from '../components/Footer';
 
-
 import heroBG from '../assets/illidan-hero.png';
-import footerVideo from '../assets/BlizzPromo.mp4';
-import bnetApp from '../assets/battlenet_app.png';
 
 import '../index.css';
 
 const Home = () => {
     return (
-        <main className="overflow-x-hidden">
+        <main className="overflow-x-hidden scroll-smooth">
             <NavbarComp />
 
             {/* Hero Section */}

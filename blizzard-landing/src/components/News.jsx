@@ -13,7 +13,7 @@ const News = () => {
                         <h1 className="xl:text-8xl text-5xl font-bold ml-32">News</h1>
                     </div>
                 </div>
-                <div id="news-articles" className="flex flex-wrap justify-center w-full p-4 xl:gap-x-8 gap-y-4">
+                <div id="news-articles" className="flex flex-wrap justify-center w-full p-4 xl:gap-x-8 gap-y-4 xl:pt-36">
 
                     <a href="https://www.blizzard.com/en-us/" className="relative xl:w-1/3 w-full xl:h-[800px] h-[400px] rounded-lg block">
                         <div
