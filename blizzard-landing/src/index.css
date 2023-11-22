@@ -39,7 +39,6 @@ h1 {
   background: linear-gradient(to bottom, #0E76D0 20%, #044F9C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 span,
@@ -68,6 +67,10 @@ p {
   );
 }
 
+#video-overlay {
+  background: rgba(36, 36, 36, 0.75);
+}
+
 #hero-text span {
   color: white;
   font-family: 'Bord', sans-serif;
@@ -81,6 +84,10 @@ p {
 
 .wrapper {
   font-family: 'Bord', sans-serif;
+}
+
+#textSection {
+  background: center / cover no-repeat url('../assets/contentBG.jpg');
 }
 
 /* Parallax Scroll Text */
@@ -100,13 +107,14 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   display: flex;
+  font-size: 64px;
   white-space: nowrap;
   flex-wrap: nowrap;
 }
 
 @media (min-width: 1280px) {
   .parallax .scroller {
-    font-size: 80px;
+    font-size: 96px;
   }
 }
 

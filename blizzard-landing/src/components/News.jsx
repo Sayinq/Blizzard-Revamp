@@ -14,15 +14,25 @@ const News = () => {
                     </div>
                 </div>
                 <div id="news-articles" className="flex flex-wrap justify-center w-full p-4 xl:gap-x-8 gap-y-4">
-                    <div id="news-main" 
-                        className="relative xl:w-1/3 w-full xl:h-[800px] h-[400px] rounded-lg"
-                    >
-                        <div id="main-text" className="flex absolute bottom-5 left-5 flex-col text-xl gap-y-2">
-                            <p className="text-xs text-zinc-400 uppercase">Battle.net</p>
-                            <h2 className="text-xl text-white uppercase">News and notable events in 2023.</h2>
-                            <p className="flex flex-row text-xs text-zinc-400 uppercase">More </p>
+
+                    <a href="https://www.blizzard.com/en-us/" className="relative xl:w-1/3 w-full xl:h-[800px] h-[400px] rounded-lg block">
+                        <div
+                            id="news-main"
+                            className="relative xl:w-full h-full rounded-lg overflow-hidden"
+                        >
+                            <div
+                                id="main-text"
+                                className="flex absolute bottom-5 left-5 flex-col text-xl gap-y-2"
+                            >
+                                <p className="text-xs text-zinc-400 uppercase">Battle.net</p>
+                                <h2 className="text-xl text-white uppercase">
+                                    News and notable events in 2023.
+                                </h2>
+                                <p className="flex flex-row text-xs text-zinc-400 uppercase">More </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+
                     <div id="news-secondary" className="flex flex-col xl:w-1/4 w-full h-auto gap-y-4">
                         <a href="https://www.blizzard.com/en-us/">
                         <div id="secondary-one" className="relative w-full h-[390px] rounded-lg">
