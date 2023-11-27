@@ -28,7 +28,7 @@ const NavbarComp = () => {
                         {/* Wrap these with their own modals */}
                         <Dropdown className="bg-[#1A1A1A]">
                             <DropdownTrigger>
-                                <Button className="flex flex-row text-white text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none m-0 p-4">
+                                <Button className="flex flex-row text-white 2xl:text-xl text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none m-0 p-4">
                                     Diablo
                                     <img src={chevronLogo} className="w-4 h-4" />
                                 </Button>
@@ -43,7 +43,7 @@ const NavbarComp = () => {
 
                         <Dropdown className="bg-[#1A1A1A]">
                             <DropdownTrigger>
-                                <Button className="flex flex-row text-white text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none m-0 p-4">
+                                <Button className="flex flex-row text-white 2xl:text-xl text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none m-0 p-4">
                                     Overwatch
                                     <img src={chevronLogo} className="w-4 h-4" />
                                 </Button>
@@ -55,7 +55,7 @@ const NavbarComp = () => {
 
                         <Dropdown className="bg-[#1A1A1A]">
                             <DropdownTrigger>
-                                <Button className="flex flex-row text-white text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none m-0 p-4">
+                                <Button className="flex flex-row text-white 2xl:text-xl text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none m-0 p-4">
                                     Warcraft
                                     <img src={chevronLogo} className="w-4 h-4" />
                                 </Button>
@@ -70,7 +70,7 @@ const NavbarComp = () => {
 
                         <Dropdown className="bg-[#1A1A1A]">
                             <DropdownTrigger>
-                                <Button className="flex flex-row text-white text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none m-0 p-4">
+                                <Button className="flex flex-row text-white 2xl:text-xl text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none m-0 p-4">
                                     Starcraft
                                     <img src={chevronLogo} className="w-4 h-4" />
                                 </Button>
@@ -124,7 +124,7 @@ const NavbarComp = () => {
 
                     <Dropdown className="bg-[#1A1A1A]">
                         <DropdownTrigger>
-                            <Button className="sm:flex hidden flex-row text-white text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none m-0 p-4">
+                            <Button className="2xl:flex hidden flex-row text-white 2xl:text-xl text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none m-0 p-4">
                                 About
                                 <img src={chevronLogo} className="w-4 h-4" />
                             </Button>
@@ -140,7 +140,7 @@ const NavbarComp = () => {
                         </DropdownMenu>
                     </Dropdown>
 
-                    <Link href="https://us.shop.battle.net/en-us" className="sm:flex hidden text-white text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none m-0 p-2 rounded-lg">
+                    <Link href="https://us.shop.battle.net/en-us" className="sm:flex hidden text-white 2xl:text-xl text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none m-0 p-2 rounded-lg">
                         Shop
                     </Link>
 
@@ -166,7 +166,7 @@ const NavbarComp = () => {
                                 <DropdownItem key="Support">Support</DropdownItem>
                                 <DropdownItem key="Shop" className="sm:hidden flex">Shop</DropdownItem>
                             </DropdownSection>
-                            <DropdownSection aria-label="About" showDivider title="About" className="sm:hidden">
+                            <DropdownSection aria-label="About" showDivider title="About" className="2xl:hidden">
                                 <DropdownItem key="Account Blizzard">About Blizzard</DropdownItem>
                                 <DropdownItem key="News">News</DropdownItem>
                                 <DropdownItem key="BlizzCon">BlizzCon</DropdownItem>
