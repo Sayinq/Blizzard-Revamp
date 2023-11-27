@@ -140,3 +140,15 @@ p {
 #game:hover > #arrow-icon {
   transform: rotate(90deg);
 }
+
+/* Footer Section */
+
+#footer-hero {
+  background: url('../src/assets/blizzFooterBG.png');
+}
+
+@media (min-width: 1280px) {
+  #footer-hero {
+    background: transparent;
+  }
+}

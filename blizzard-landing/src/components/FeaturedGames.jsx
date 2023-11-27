@@ -115,7 +115,7 @@ const FeaturedGames = () => {
                 >
                   {game.name}
                 </h2>
-                <p id="game-desc" className="lg:flex hidden 2xl:w-1/2 xl:text-xl" ref={(el) => (gameDescRefs.current[index] = el)}>
+                <p id="game-desc" className="sm:flex hidden 2xl:w-1/2 xl:text-xl" ref={(el) => (gameDescRefs.current[index] = el)}>
                   {game.desc}
                 </p>
               </div>
