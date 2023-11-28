@@ -17,6 +17,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Scrollbar thin */
+
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #148cee #242424;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #242424;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #148cee;
+    border-radius: 8px;
+    border: 3px solid #242424;
+  }
+
 @font-face {
   font-family: "Archivo";
   src:

@@ -108,7 +108,7 @@ const FeaturedGames = () => {
               }}
             >
               <p className="italic text-zinc-400 text-sm">({game.id})</p>
-              <div className="flex flex-col sm:w-2/3 w-fit h-auto gap-y-12">
+              <div className="flex flex-col sm:w-2/3 w-fit h-auto gap-y-12 overflow-hidden">
                 <h2
                   id="game-name"
                   className="2xl:text-4xl xl:text-2xl sm:text-xl text-base text-white text-left xl:w-[600px] sm:w-[300px] w-[200px] xl:mr-[30%]"

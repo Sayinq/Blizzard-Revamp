@@ -140,7 +140,7 @@ const NavbarComp = () => {
                         </DropdownMenu>
                     </Dropdown>
 
-                    <Link href="https://us.shop.battle.net/en-us" className="sm:flex hidden text-white 2xl:text-xl text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none m-0 p-2 rounded-lg">
+                    <Link href="https://us.shop.battle.net/en-us" className="sm:flex hidden text-white 2xl:text-xl text-lg font-bold bg-transparent hover:bg-zinc-500/40 border-none outline-none 2xl:m-0 mr-6 p-2 rounded-lg">
                         Shop
                     </Link>
 
@@ -167,18 +167,18 @@ const NavbarComp = () => {
                                 <DropdownItem key="Shop" className="sm:hidden flex">Shop</DropdownItem>
                             </DropdownSection>
                             <DropdownSection aria-label="About" showDivider title="About" className="2xl:hidden">
-                                <DropdownItem key="Account Blizzard">About Blizzard</DropdownItem>
-                                <DropdownItem key="News">News</DropdownItem>
+                                <DropdownItem key="Account Blizzard" href="https://www.blizzard.com/en-us/company/about">About Blizzard</DropdownItem>
+                                <DropdownItem key="News" href="https://news.blizzard.com/en-us/blizzard">News</DropdownItem>
                                 <DropdownItem key="BlizzCon">BlizzCon</DropdownItem>
                                 <DropdownItem key="Careers" className="sm:hidden flex">Careers</DropdownItem>
                             </DropdownSection>
                         </DropdownMenu>
                     </Dropdown>
 
-                    <Button href="#" variant="flat" className="xl:flex hidden flex-row w-[200px] h-[50px] bg-[#148CEE] text-white rounded-[5px] gap-x-4 justify-center items-center">
+                    <Link href="https://download.battle.net/en-us?product=bnetdesk" variant="flat" className="xl:flex hidden flex-row w-[200px] h-[50px] bg-[#148CEE] text-white rounded-[5px] gap-x-4 justify-center items-center">
                         <img src={bnetLogo} className="translate-y-[3px] w-6 h-6" />
                         <span>Download B.NET</span>
-                    </Button>
+                    </Link>
                 </div>
             </div>
         </nav>

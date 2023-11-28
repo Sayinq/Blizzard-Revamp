@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '@nextui-org/react'
+import { Button, Link } from '@nextui-org/react'
 
 import bnetApp from '../assets/battlenet_app.png';
 import bnetLogo from '../assets/bnet-logo.svg';
@@ -16,20 +16,20 @@ const FooterHero = () => {
                     <div id="content-text" className="relative flex flex-col justify-center items-center text-center gap-y-8">
                         <h1 className="2xl:text-7xl xl:text-5xl text-4xl font-bold">BATTLE.NET</h1>
                         <p className="2xl:text-xl xl:text-lg w-[300px] h-auto">Your one stop shop into the world of Blizzard and Activision</p>
-                        <Button href="#" variant="flat" className="xl:flex hidden flex-row w-[250px] h-[50px] bg-[#148CEE] text-white rounded-[2px] gap-x-4 justify-center items-center">
+                        <Link href="https://download.battle.net/en-us?product=bnetdesk" variant="flat" className="xl:flex hidden flex-row w-[200px] h-[50px] bg-[#148CEE] text-white rounded-[5px] gap-x-4 justify-center items-center">
                                 <img src={bnetLogo} className="translate-y-[3px] w-6 h-6" />
                                 <span>Download B.NET</span>
-                        </Button>
+                        </Link>
                     </div>
                     <div id="content-image" className="flex flex-col justify-center items-center w-fit h-fit xl:gap-y-8">
                         
                         <img src={bnetApp} className="2xl:scale-[145%] xl:scale-[125%]"/>  
                     
                         <div id="content-button" className="relative w-fit h-fit">
-                            <Button href="#" variant="flat" className="xl:hidden flex flex-row w-[250px] h-[50px] bg-[#148CEE] text-white rounded-[2px] gap-x-4 justify-center items-center">
+                            <Link href="https://download.battle.net/en-us?product=bnetdesk" variant="flat" className="xl:hidden flex flex-row w-[200px] h-[50px] bg-[#148CEE] text-white rounded-[5px] gap-x-4 justify-center items-center">
                                 <img src={bnetLogo} className="translate-y-[3px] w-6 h-6" />
                                 <span>Download B.NET</span>
-                            </Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
