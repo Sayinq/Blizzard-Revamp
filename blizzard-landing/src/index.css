@@ -69,6 +69,14 @@ p {
   font-family: 'Archivo', sans-serif;
 }
 
+#marquee-wrapper {
+  z-index: 999;
+}
+
+.overlay {
+  z-index: 900;
+}
+
 #gradient-overlay {
   background: linear-gradient(
     rgba(36, 36, 36, 0.6),

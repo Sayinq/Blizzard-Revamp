@@ -6,7 +6,14 @@ import { Button,
         DropdownMenu,
         DropdownItem,
         DropdownSection,
-        User } from '@nextui-org/react';
+        Modal,
+        ModalContent,
+        ModalHeader,
+        ModalBody,
+        ModalFooter, 
+        useDisclosure, 
+        Checkbox, 
+        Input } from '@nextui-org/react';
 
 
 
@@ -18,6 +25,8 @@ import chevronLogo from '../assets/chevron-down-outline.svg';
 
 
 const NavbarComp = () => {
+    const {isOpen, onOpen, onOpenChange} = useDisclosure();
+
     return (
         <nav id="navbar" className="fixed top-0 left-0 flex items-center w-screen h-[100px] bg-[#1A1A1A] z-50">
             <div id="nav-wrapper" className="absolute flex flex-row sm:justify-between justify-start items-center w-full h-auto px-8">
@@ -146,14 +155,14 @@ const NavbarComp = () => {
 
                     <Dropdown className="bg-[#1A1A1A]">
                         <DropdownTrigger>
-                            <Button className="flex justify-center sm:translate-x-[0px] translate-x-[20px] items-center p-[0.75rem] h-fit w-fit rounded-full bg-[#148CEE]">
+                            <Button id="account_button" className="flex justify-center sm:translate-x-[0px] translate-x-[20px] items-center p-[0.75rem] h-fit w-fit rounded-full bg-[#148CEE]">
                                 <img src={personLogo} className="w-6 h-6" />
                             </Button>
                         </DropdownTrigger>
                         <DropdownMenu>
                             <DropdownSection key="Login Button">
                                 <DropdownItem key="login_button">
-                                    <Button href="#" variant="flat" className="flex flex-row w-full h-auto py-2 bg-[#148CEE] text-white rounded-[2px] gap-x-4 justify-center items-center border-none outline-none">
+                                    <Button id="loginButton" onPress={onOpen} href="#" variant="flat" className="flex flex-row w-full h-auto py-2 bg-[#148CEE] text-white rounded-[2px] gap-x-4 justify-center items-center border-none outline-none">
                                         <img src={personLogo} className="w-4 h-4" />
                                         <span className="font-bold">Login</span>
                                     </Button>
@@ -174,6 +183,52 @@ const NavbarComp = () => {
                             </DropdownSection>
                         </DropdownMenu>
                     </Dropdown>
+                    <Modal 
+                        isOpen={isOpen} 
+                        onOpenChange={onOpenChange}
+                        placement="top-center"
+                        className="bg-[#1A1A1A]"
+                    >
+                        <ModalContent>
+                            {(onClose) => (
+                                <>
+                                    <ModalHeader className="flex flex-col gap-1">Log in</ModalHeader>
+                                        <ModalBody>
+                                            <Input
+                                                autoFocus
+                                                label="Email"
+                                                placeholder="Enter your email"
+                                                variant="bordered"
+                                            />
+                                            <Input
+                                                label="Password"
+                                                placeholder="Enter your password"
+                                                type="password"
+                                                variant="bordered"
+                                            />
+                                            <div className="flex py-2 px-1 justify-between">
+                                                <Checkbox
+                                                    className="text-sm text-white"
+                                                >
+                                                    Remember me
+                                                </Checkbox>
+                                                <Link color="primary" href="#" size="sm">
+                                                    Forgot password?
+                                                </Link>
+                                            </div>
+                                        </ModalBody>
+                                        <ModalFooter>
+                                            <Button color="danger" variant="flat" onPress={onClose}>
+                                                Close
+                                            </Button>
+                                            <Button color="primary" onPress={onClose}>
+                                                Sign in
+                                            </Button>
+                                        </ModalFooter>
+                                    </>
+                                )}
+                            </ModalContent>
+                        </Modal>
 
                     <Link href="https://download.battle.net/en-us?product=bnetdesk" variant="flat" className="xl:flex hidden flex-row w-[200px] h-[50px] bg-[#148CEE] text-white rounded-[5px] gap-x-4 justify-center items-center">
                         <img src={bnetLogo} className="translate-y-[3px] w-6 h-6" />
